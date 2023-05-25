@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<style>
+    .nav-style {
+        height: 100px;
+    }
+
+    body {
+        font-family: 'Abel', sans-serif;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    .grid-item {
+        margin-bottom: 25px;
+    }
+
+
+    button[aria-expanded="true"] {
+        color: #b5342f !important;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    .footer-logo{
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+</style>
+
+<body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light  nav-style bg-white">
+        <div class="container-lg h-100 border-bottom">
+            <a class="navbar-brand py-4 px-5 bg-logobg border" href="#">logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav bg-white">
+                    <li class="nav-item mx-5">
+                        <a class="nav-link text-black" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link text-black" href="#">Features</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link text-black" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a href="#" class="btn bg-btnbg text-white rounded-5 px-5">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- . -->
+
+    <!-- intro section -->
+    <section>
+        <div class="container">
+            <div class="">
+                <div class="text-black">
+                    <h1 class="display-1">UNLEASH THE POWER OF</h1>
+                    <h1 class="display-1">VISIBILITY: YOUR</h1>
+                </div>
+                <div class=" position-relative w-100">
+                    <img src="/assets/shutterstock.png" alt="img" class="w-100">
+                    <p class="text-start display-1 position-absolute top-0 start-0 mx-3 text-white">SUCCESS STARTS HERE
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-6">Who we are</h1>
+                </div>
+                <div class="col-md-6 ">
+                    <p class="h4">At Marketing Agency, we specialize in revolutionizing your brand's visibility and
+                        amplifying your
+                        online presence
+                        through cutting-edge digital marketing solutions.</p> 
+
+                    <p class="h4">As a full-stack digital marketing agency, our mission is to empower businesses by
+                        helping them
+                        stand out in the crowded
+                        market. Our team of seasoned experts is driven by a relentless passion for delivering
+                        exceptional services with the goal
+                        to elevate your brand to new heights.</p>
+
+                    <p class="h4">Discover the power of digital marketing innovation with, where we turn your business
+                        vision into
+                        a resounding success
+                        story
+                    </p>
+                    <a href="#" class="btn bg-btnbg text-white rounded-5 px-5">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- . -->
+
+    <!-- accordion -->
+    <section class="bg-black">
+        <div class="container text-white py-3">
+            <div>
+                <h1>OUR SERVICES</h1>
+                <div class="h5">
+                    <p>Our passionate team of experts is committed to delivering exceptional experiences that will make
+                        your brand shine</p>
+
+                    <p>Our skills and expertise span across these key focus areas:</p>
+                </div>
+            </div>
+            <div class="container-lg">
+                <div class="accordion accordion-flush py-3 " id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed px-0 bg-black text-white display-3" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                WEBSITE DESIGN AND OPTIMIZATION
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse bg-black text-white"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="w-100">
+                                <img src="./assets/Rectangle 4.png" class="w-100" alt="accordion">
+                            </div>
+                            <div class="accordion-body">We design and optimize websites that are visually appealing,
+                                user-friendly, and optimized for search engines (SEO). Our
+                                websites are designed to reflect your brand’s values and appeal to your target audience.
+                                We use the latest technologies
+                                and industry practices to ensure that your website is optimized for fast loading times,
+                                responsiveness, and search
+                                engine visibility.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed px-0 bg-black text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                MULTIMEDIA UX DESIGN
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse bg-black text-white"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the
+                                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                                imagine
+                                this being
+                                filled with some actual content.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed px-0 bg-black text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                CONTENT CREATION AND MANAGEMENT
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse bg-black text-white"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                                more
+                                exciting
+                                happening here in terms of content, but just filling up the space to make it look, at
+                                least
+                                at first
+                                glance, a bit more representative of how this would look in a real-world application.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed px-0 bg-black text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                EMAIL MARKETING
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse bg-black text-white"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                                more
+                                exciting
+                                happening here in terms of content, but just filling up the space to make it look, at
+                                least
+                                at first
+                                glance, a bit more representative of how this would look in a real-world application.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed px-0 bg-black text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                SOCIAL MEDIA MARKETING
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse bg-black text-white"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                                more
+                                exciting
+                                happening here in terms of content, but just filling up the space to make it look, at
+                                least
+                                at first
+                                glance, a bit more representative of how this would look in a real-world application.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed px-0 bg-black text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                DISPLAY ADVERTISING
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse bg-black text-white"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                                more
+                                exciting
+                                happening here in terms of content, but just filling up the space to make it look, at
+                                least
+                                at first
+                                glance, a bit more representative of how this would look in a real-world application.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- . -->
+
+    <!-- get in touch  -->
+    <section>
+        <div class="container py-5">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-9">
+                    <h1 class="text-uppercase display-6 text-center text-md-start">Ready to make your brand shine?</h1>
+                </div>
+                <div class="col-md-3 text-center text-md-end">
+                    <a href="#" class="btn bg-btnbg h5 text-white rounded-5 px-5">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- . -->
+
+    <!-- grid -->
+    <section class="bg-black">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-md-5">
+                    <h1 class="text-uppercase">our process</h1>
+                </div>
+                <div class="col-md-7">
+                    <p class="h4">We have a well-defined process that ensures the timely delivery of high-quality
+                        results.
+                        Our
+                        process involves the
+                        following steps:</p>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row grid-height">
+                    <div class="col-md-4 grid-item">
+                        <!-- Content for Column 1 -->
+                        <div class="card h-100 bg-btnbg">
+                            <div class="card-body">
+                                <div>
+                                    <svg width="60" height="47" viewBox="0 0 60 47" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.625 46.0625C2.80208 46.0625 2.10677 45.7786 1.53906 45.2109C0.971354 44.6432 0.6875 43.9479 0.6875 43.125V35C0.6875 33.4635 1.20965 32.1732 2.25394 31.1289C3.29815 30.0846 4.5885 29.5625 6.125 29.5625H15.25C16.0476 29.5625 16.7158 29.6979 17.2544 29.9688C17.7931 30.2396 18.25 30.625 18.625 31.125C19.9167 33 21.5625 34.4583 23.5625 35.5C25.5625 36.5417 27.7008 37.0625 29.9773 37.0625C32.2562 37.0625 34.4026 36.5417 36.4166 35.5C38.4305 34.4583 40.125 33 41.5 31.125C41.796 30.6374 42.2137 30.2551 42.7533 29.9781C43.2928 29.701 43.9792 29.5625 44.8125 29.5625H53.9375C55.474 29.5625 56.7643 30.0846 57.8086 31.1289C58.8529 32.1732 59.375 33.4635 59.375 35V43.125C59.375 43.9479 59.0911 44.6432 58.5234 45.2109C57.9557 45.7786 57.2604 46.0625 56.4375 46.0625H43.9375C43.1146 46.0625 42.4193 45.7786 41.8516 45.2109C41.2839 44.6432 41 43.9479 41 43.125V38.25C39.4583 39.4167 37.7467 40.3333 35.8652 41C33.9837 41.6667 32.0287 42 30 42C28 42 26.0625 41.6771 24.1875 41.0312C22.3125 40.3854 20.6042 39.4583 19.0625 38.25V43.125C19.0625 43.9479 18.7786 44.6432 18.2109 45.2109C17.6432 45.7786 16.9479 46.0625 16.125 46.0625H3.625ZM30.0024 32.375C28.6675 32.375 27.4062 32.0729 26.2188 31.4688C25.0312 30.8646 24.0625 30 23.3125 28.875C22.4375 27.6667 21.4375 26.7708 20.3125 26.1875C19.1875 25.6042 17.9167 25.2083 16.5 25C18.0417 23.7917 20.1146 22.8229 22.7188 22.0938C25.3229 21.3646 27.75 21 30 21C32.2917 21 34.7396 21.3646 37.3438 22.0938C39.9479 22.8229 42.0417 23.7917 43.625 25C42.1667 25.2083 40.875 25.6042 39.75 26.1875C38.625 26.7708 37.6522 27.6626 36.8317 28.8629C36.0689 29.9543 35.0729 30.8125 33.8438 31.4375C32.6146 32.0625 31.3341 32.375 30.0024 32.375ZM9.99263 23.3125C7.95588 23.3125 6.22917 22.6017 4.8125 21.1801C3.39583 19.7586 2.6875 18.0086 2.6875 15.9301C2.6875 13.8934 3.39829 12.1667 4.81987 10.75C6.24142 9.33333 7.97058 8.625 10.0074 8.625C12.0441 8.625 13.7812 9.33579 15.2188 10.7574C16.6562 12.1789 17.375 13.9081 17.375 15.9449C17.375 18.0233 16.6538 19.7708 15.2114 21.1875C13.769 22.6042 12.0294 23.3125 9.99263 23.3125ZM49.9926 23.3125C47.9559 23.3125 46.2292 22.6017 44.8125 21.1801C43.3958 19.7586 42.6875 18.0086 42.6875 15.9301C42.6875 13.8934 43.3983 12.1667 44.8199 10.75C46.2414 9.33333 47.9706 8.625 50.0074 8.625C52.0441 8.625 53.7812 9.33579 55.2188 10.7574C56.6562 12.1789 57.375 13.9081 57.375 15.9449C57.375 18.0233 56.6538 19.7708 55.2114 21.1875C53.769 22.6042 52.0294 23.3125 49.9926 23.3125ZM29.9926 14.75C27.9559 14.75 26.2292 14.0392 24.8125 12.6176C23.3958 11.1961 22.6875 9.44608 22.6875 7.36762C22.6875 5.33087 23.3983 3.60417 24.8199 2.1875C26.2414 0.770833 27.9706 0.0625 30.0074 0.0625C32.0441 0.0625 33.7812 0.773291 35.2188 2.19487C36.6562 3.61642 37.375 5.34558 37.375 7.38238C37.375 9.46079 36.6538 11.2083 35.2114 12.625C33.769 14.0417 32.0294 14.75 29.9926 14.75Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="py-4 text-white">
+                                    <h5 class="card-title">CONSULTATION</h5>
+                                    <p class="card-text">We work with you to understand your business goals and
+                                        objectives.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 grid-item">
+                        <!-- Content for Column 2 -->
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div>
+                                    <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7 19.55C14.1667 18.65 14.6667 17.7417 15.2 16.825C15.7333 15.9084 16.3 15.0167 16.9 14.15L13.45 13.45L9.25 17.7L13.7 19.55ZM39.6 5.40005C36.2 5.70005 33.2833 6.45838 30.85 7.67505C28.4167 8.89172 25.9833 10.7167 23.55 13.15C22.55 14.15 21.55 15.4084 20.55 16.925C19.55 18.4417 18.5167 20.25 17.45 22.35L23.8 28.7C25.8667 27.6334 27.6667 26.6167 29.2 25.65C30.7333 24.6834 32 23.7 33 22.7C35.4333 20.2334 37.25 17.7834 38.45 15.35C39.65 12.9167 40.4167 10 40.75 6.60005C40.7833 6.40005 40.775 6.22505 40.725 6.07505C40.675 5.92505 40.6 5.78338 40.5 5.65005C40.3667 5.55005 40.2333 5.47505 40.1 5.42505C39.9667 5.37505 39.8 5.36672 39.6 5.40005ZM28.85 17.4C28.2167 16.7667 27.9 16 27.9 15.1C27.9 14.2 28.2167 13.4334 28.85 12.8C29.4833 12.2 30.2333 11.9 31.1 11.9C31.9667 11.9 32.7167 12.2 33.35 12.8C33.9833 13.4334 34.3 14.2 34.3 15.1C34.3 16 33.9833 16.7667 33.35 17.4C32.7167 18 31.9667 18.3 31.1 18.3C30.2333 18.3 29.4833 18 28.85 17.4ZM26.6 32.5L28.45 36.9001L32.7 32.7001L32.05 29.25C31.1833 29.8167 30.2833 30.3834 29.35 30.95C28.4167 31.5167 27.5 32.0334 26.6 32.5ZM45.9 2.70005C45.9 7.56672 45.1333 11.8417 43.6 15.525C42.0667 19.2084 39.8 22.5667 36.8 25.6C36.7 25.6667 36.6 25.75 36.5 25.85C36.4 25.95 36.3 26.0334 36.2 26.1L37.35 31.7C37.5167 32.5 37.475 33.2834 37.225 34.05C36.975 34.8167 36.5833 35.4834 36.05 36.05L29.35 42.7001C28.75 43.3 28.0417 43.5251 27.225 43.375C26.4083 43.225 25.85 42.75 25.55 41.9501L21.85 33.4001L12.8 24.3L4.2 20.65C3.4 20.35 2.93333 19.7834 2.8 18.95C2.66666 18.1167 2.9 17.4167 3.5 16.85L10.2 10.15C10.7667 9.58338 11.4083 9.18338 12.125 8.95005C12.8417 8.71672 13.6 8.68338 14.4 8.85005L20.05 9.95005L20.275 9.72505C20.3583 9.64172 20.45 9.56672 20.55 9.50005C23.6167 6.43338 26.975 4.14172 30.625 2.62505C34.275 1.10838 38.5333 0.333382 43.4 0.300049C43.7333 0.300049 44.0417 0.366715 44.325 0.500049C44.6083 0.633382 44.8667 0.816716 45.1 1.05005C45.3667 1.28338 45.5667 1.54172 45.7 1.82505C45.8333 2.10838 45.9 2.40005 45.9 2.70005ZM4.9 30.95C6.33333 29.5167 8.04166 28.8 10.025 28.8C12.0083 28.8 13.7 29.5 15.1 30.9C16.4667 32.2667 17.15 33.9501 17.15 35.9501C17.15 37.9501 16.45 39.6501 15.05 41.05C13.95 42.1501 12.25 43.05 9.95 43.75C7.65 44.4501 4.56666 44.9834 0.699997 45.35C1.06666 41.4834 1.59166 38.3834 2.275 36.05C2.95833 33.7167 3.83333 32.0167 4.9 30.95ZM8.25 34.3C7.81666 34.7667 7.475 35.4001 7.225 36.2001C6.975 37 6.71666 38.1334 6.45 39.6C7.91666 39.3334 9.05 39.0584 9.85 38.7751C10.65 38.4917 11.2667 38.1334 11.7 37.7001C12.2333 37.2667 12.4917 36.7084 12.475 36.0251C12.4583 35.3417 12.2167 34.7334 11.75 34.2001C11.2167 33.7334 10.6083 33.5084 9.925 33.5251C9.24166 33.5417 8.68333 33.8 8.25 34.3Z"
+                                            fill="#B5332F" />
+                                    </svg>
+                                </div>
+                                <div class="py-4">
+                                    <h5 class="card-title">STRATEGY DEVELOPMENT</h5>
+                                    <p class="card-text">We develop a customized strategy based on your goals and
+                                        objectives.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 grid-item">
+                        <!-- Content for Column 3 -->
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div>
+                                    <svg width="44" height="40" viewBox="0 0 44 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M31.5813 35.1C33.6476 35.1 35.4173 34.3678 36.8904 32.9035C38.3634 31.4392 39.1 29.6714 39.1 27.6V25.35H24.1V27.6C24.1 29.6714 24.8303 31.4392 26.2909 32.9035C27.7516 34.3678 29.515 35.1 31.5813 35.1ZM24.1 21.35H29.6V14.45C28.0333 14.8833 26.7417 15.725 25.725 16.975C24.7083 18.225 24.1667 19.6833 24.1 21.35ZM33.6 21.35H39.1C39.0333 19.6833 38.4917 18.225 37.475 16.975C36.4583 15.725 35.1667 14.8833 33.6 14.45V21.35ZM31.6116 39.25C28.353 39.25 25.5947 38.1203 23.3368 35.8609C21.0789 33.6015 19.95 30.8478 19.95 27.6V22.1C19.95 18.8824 21.08 16.1363 23.34 13.8618C25.6 11.5872 28.3544 10.45 31.6032 10.45C34.852 10.45 37.6136 11.5872 39.8882 13.8618C42.1627 16.1363 43.3 18.8824 43.3 22.1V27.6C43.3 30.8478 42.1666 33.6015 39.8997 35.8609C37.6329 38.1203 34.8702 39.25 31.6116 39.25ZM5.45 35.25C4.14833 35.25 3.03958 34.792 2.12375 33.8762C1.20792 32.9604 0.75 31.8516 0.75 30.55V5.44995C0.75 4.13452 1.20792 3.014 2.12375 2.0884C3.03958 1.16277 4.14833 0.699951 5.45 0.699951H38.55C39.8654 0.699951 40.986 1.16277 41.9116 2.0884C42.8372 3.014 43.3 4.13452 43.3 5.44995V13.15C42.6392 12.3593 41.9156 11.6533 41.1294 11.032C40.3431 10.4106 39.4833 9.86662 38.55 9.39995V5.44995H5.45V30.55H17.35C17.45 31.4112 17.65 32.2348 17.95 33.0209C18.25 33.8069 18.6333 34.55 19.1 35.25H5.45Z"
+                                            fill="#B5332F" />
+                                    </svg>
+                                </div>
+                                <div class="py-4">
+                                    <h5 class="card-title">DESIGN</h5>
+                                    <p class="card-text">We design a unique and visually appealing digital marketing
+                                        solution that aligns with your brand’s values. Whether you
+                                        want to make improvements or start from fresh, our team will customize the
+                                        process to meet your business needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid-height">
+                    <div class="col-md-4 grid-item">
+                        <!-- Content for Column 1 (Row 2) -->
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div>
+                                    <svg width="44" height="40" viewBox="0 0 44 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M31.5813 35.1C33.6476 35.1 35.4173 34.3678 36.8904 32.9035C38.3634 31.4392 39.1 29.6714 39.1 27.6V25.35H24.1V27.6C24.1 29.6714 24.8303 31.4392 26.2909 32.9035C27.7516 34.3678 29.515 35.1 31.5813 35.1ZM24.1 21.35H29.6V14.45C28.0333 14.8833 26.7417 15.725 25.725 16.975C24.7083 18.225 24.1667 19.6833 24.1 21.35ZM33.6 21.35H39.1C39.0333 19.6833 38.4917 18.225 37.475 16.975C36.4583 15.725 35.1667 14.8833 33.6 14.45V21.35ZM31.6116 39.25C28.353 39.25 25.5947 38.1203 23.3368 35.8609C21.0789 33.6015 19.95 30.8478 19.95 27.6V22.1C19.95 18.8824 21.08 16.1363 23.34 13.8618C25.6 11.5872 28.3544 10.45 31.6032 10.45C34.852 10.45 37.6136 11.5872 39.8882 13.8618C42.1627 16.1363 43.3 18.8824 43.3 22.1V27.6C43.3 30.8478 42.1666 33.6015 39.8997 35.8609C37.6329 38.1203 34.8702 39.25 31.6116 39.25ZM5.45 35.25C4.14833 35.25 3.03958 34.792 2.12375 33.8762C1.20792 32.9604 0.75 31.8516 0.75 30.55V5.44995C0.75 4.13452 1.20792 3.014 2.12375 2.0884C3.03958 1.16277 4.14833 0.699951 5.45 0.699951H38.55C39.8654 0.699951 40.986 1.16277 41.9116 2.0884C42.8372 3.014 43.3 4.13452 43.3 5.44995V13.15C42.6392 12.3593 41.9156 11.6533 41.1294 11.032C40.3431 10.4106 39.4833 9.86662 38.55 9.39995V5.44995H5.45V30.55H17.35C17.45 31.4112 17.65 32.2348 17.95 33.0209C18.25 33.8069 18.6333 34.55 19.1 35.25H5.45Z"
+                                            fill="#B5332F" />
+                                    </svg>
+                                </div>
+                                <div class="py-4">
+                                    <h5 class="card-title">DEVELOPMENT</h5>
+                                    <p class="card-text">We develop your digital marketing solution using the latest
+                                        technologies and industry practices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 grid-item">
+                        <!-- Content for Column 2 (Row 2) -->
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div>
+                                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M32.3434 22.9C32.0478 22.9 31.7584 22.8417 31.475 22.725C31.1917 22.6084 30.9334 22.4334 30.7 22.2L21.8 13.3C21.5667 13.0667 21.3917 12.8061 21.275 12.5184C21.1584 12.2306 21.1 11.9389 21.1 11.6434C21.1 11.3145 21.1584 11.0167 21.275 10.75C21.3917 10.4834 21.5667 10.2334 21.8 10L30.7 1.10002C30.9334 0.866691 31.1939 0.691691 31.4817 0.575024C31.7695 0.458358 32.0611 0.400024 32.3567 0.400024C32.6856 0.400024 32.9834 0.458358 33.25 0.575024C33.5167 0.691691 33.7667 0.866691 34 1.10002L42.9 10C43.1334 10.2334 43.3084 10.4856 43.425 10.7567C43.5417 11.0278 43.6 11.3278 43.6 11.6567C43.6 11.9522 43.5417 12.2417 43.425 12.525C43.3084 12.8084 43.1334 13.0667 42.9 13.3L34 22.2C33.7667 22.4334 33.5145 22.6084 33.2434 22.725C32.9722 22.8417 32.6722 22.9 32.3434 22.9ZM3.05002 20.25C2.35836 20.25 1.78544 20.0229 1.33127 19.5688C0.877108 19.1146 0.650024 18.5584 0.650024 17.9V5.35002C0.650024 4.69169 0.877108 4.13544 1.33127 3.68127C1.78544 3.22711 2.35836 3.00002 3.05002 3.00002H15.55C16.2084 3.00002 16.7646 3.22711 17.2188 3.68127C17.6729 4.13544 17.9 4.69169 17.9 5.35002V17.9C17.9 18.5584 17.6729 19.1146 17.2188 19.5688C16.7646 20.0229 16.2084 20.25 15.55 20.25H3.05002ZM26.1 43.35C25.4417 43.35 24.8854 43.1229 24.4313 42.6688C23.9771 42.2146 23.75 41.6417 23.75 40.95V28.45C23.75 27.7917 23.9771 27.2354 24.4313 26.7813C24.8854 26.3271 25.4417 26.1 26.1 26.1H38.65C39.3084 26.1 39.8646 26.3271 40.3188 26.7813C40.7729 27.2354 41 27.7917 41 28.45V40.95C41 41.6417 40.7729 42.2146 40.3188 42.6688C39.8646 43.1229 39.3084 43.35 38.65 43.35H26.1ZM3.05002 43.35C2.35836 43.35 1.78544 43.1229 1.33127 42.6688C0.877108 42.2146 0.650024 41.6417 0.650024 40.95V28.45C0.650024 27.7917 0.877108 27.2354 1.33127 26.7813C1.78544 26.3271 2.35836 26.1 3.05002 26.1H15.55C16.2084 26.1 16.7646 26.3271 17.2188 26.7813C17.6729 27.2354 17.9 27.7917 17.9 28.45V40.95C17.9 41.6417 17.6729 42.2146 17.2188 42.6688C16.7646 43.1229 16.2084 43.35 15.55 43.35H3.05002ZM5.40002 15.55H13.15V7.70002H5.40002V15.55ZM32.5 17.35L38.05 11.8L32.5 6.20002L26.95 11.8L32.5 17.35ZM28.45 38.6H36.3V30.85H28.45V38.6ZM5.40002 38.6H13.15V30.85H5.40002V38.6Z"
+                                            fill="#B5332F" />
+                                    </svg>
+                                </div>
+                                <div class="py-4">
+                                    <h5 class="card-title">TESTING</h5>
+                                    <p class="card-text">We rigorously test your digital marketing solution to ensure
+                                        that it functions optimally across different devices and
+                                        browsers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 grid-item">
+                        <!-- Content for Column 3 (Row 2) -->
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div>
+                                    <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7 19.55C14.1667 18.65 14.6667 17.7417 15.2 16.825C15.7333 15.9084 16.3 15.0167 16.9 14.15L13.45 13.45L9.25 17.7L13.7 19.55ZM39.6 5.40005C36.2 5.70005 33.2833 6.45838 30.85 7.67505C28.4167 8.89172 25.9833 10.7167 23.55 13.15C22.55 14.15 21.55 15.4084 20.55 16.925C19.55 18.4417 18.5167 20.25 17.45 22.35L23.8 28.7C25.8667 27.6334 27.6667 26.6167 29.2 25.65C30.7333 24.6834 32 23.7 33 22.7C35.4333 20.2334 37.25 17.7834 38.45 15.35C39.65 12.9167 40.4167 10 40.75 6.60005C40.7833 6.40005 40.775 6.22505 40.725 6.07505C40.675 5.92505 40.6 5.78338 40.5 5.65005C40.3667 5.55005 40.2333 5.47505 40.1 5.42505C39.9667 5.37505 39.8 5.36672 39.6 5.40005ZM28.85 17.4C28.2167 16.7667 27.9 16 27.9 15.1C27.9 14.2 28.2167 13.4334 28.85 12.8C29.4833 12.2 30.2333 11.9 31.1 11.9C31.9667 11.9 32.7167 12.2 33.35 12.8C33.9833 13.4334 34.3 14.2 34.3 15.1C34.3 16 33.9833 16.7667 33.35 17.4C32.7167 18 31.9667 18.3 31.1 18.3C30.2333 18.3 29.4833 18 28.85 17.4ZM26.6 32.5L28.45 36.9001L32.7 32.7001L32.05 29.25C31.1833 29.8167 30.2833 30.3834 29.35 30.95C28.4167 31.5167 27.5 32.0334 26.6 32.5ZM45.9 2.70005C45.9 7.56672 45.1333 11.8417 43.6 15.525C42.0667 19.2084 39.8 22.5667 36.8 25.6C36.7 25.6667 36.6 25.75 36.5 25.85C36.4 25.95 36.3 26.0334 36.2 26.1L37.35 31.7C37.5167 32.5 37.475 33.2834 37.225 34.05C36.975 34.8167 36.5833 35.4834 36.05 36.05L29.35 42.7001C28.75 43.3 28.0417 43.5251 27.225 43.375C26.4083 43.225 25.85 42.75 25.55 41.9501L21.85 33.4001L12.8 24.3L4.2 20.65C3.4 20.35 2.93333 19.7834 2.8 18.95C2.66666 18.1167 2.9 17.4167 3.5 16.85L10.2 10.15C10.7667 9.58338 11.4083 9.18338 12.125 8.95005C12.8417 8.71672 13.6 8.68338 14.4 8.85005L20.05 9.95005L20.275 9.72505C20.3583 9.64172 20.45 9.56672 20.55 9.50005C23.6167 6.43338 26.975 4.14172 30.625 2.62505C34.275 1.10838 38.5333 0.333382 43.4 0.300049C43.7333 0.300049 44.0417 0.366715 44.325 0.500049C44.6083 0.633382 44.8667 0.816716 45.1 1.05005C45.3667 1.28338 45.5667 1.54172 45.7 1.82505C45.8333 2.10838 45.9 2.40005 45.9 2.70005ZM4.9 30.95C6.33333 29.5167 8.04166 28.8 10.025 28.8C12.0083 28.8 13.7 29.5 15.1 30.9C16.4667 32.2667 17.15 33.9501 17.15 35.9501C17.15 37.9501 16.45 39.6501 15.05 41.05C13.95 42.1501 12.25 43.05 9.95 43.75C7.65 44.4501 4.56666 44.9834 0.699997 45.35C1.06666 41.4834 1.59166 38.3834 2.275 36.05C2.95833 33.7167 3.83333 32.0167 4.9 30.95ZM8.25 34.3C7.81666 34.7667 7.475 35.4001 7.225 36.2001C6.975 37 6.71666 38.1334 6.45 39.6C7.91666 39.3334 9.05 39.0584 9.85 38.7751C10.65 38.4917 11.2667 38.1334 11.7 37.7001C12.2333 37.2667 12.4917 36.7084 12.475 36.0251C12.4583 35.3417 12.2167 34.7334 11.75 34.2001C11.2167 33.7334 10.6083 33.5084 9.925 33.5251C9.24166 33.5417 8.68333 33.8 8.25 34.3Z"
+                                            fill="#B5332F" />
+                                    </svg>
+                                </div>
+                                <div class="py-4">
+                                    <h5 class="card-title">LAUNCH</h5>
+                                    <p class="card-text">We launch your digital marketing solution and provide ongoing
+                                        support to ensure that it continues to deliver excellent
+                                        results.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- . -->
+
+    <!-- get in touch  -->
+    <section>
+        <div class="container py-5">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-8">
+                    <h1 class="text-uppercase text-center text-md-start display-6">let's access your business needs!
+                    </h1>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="#" class="btn bg-btnbg text-white h6 rounded-5 px-5">Book a free 15 minutes consultation
+                        now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- . -->
+
+    <!-- footer -->
+    <footer class="bg-black text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center justify-content-md-between align-items-center">
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="footer-logo">
+                        <a class="navbar-brand py-4 px-5 bg-logobg d-block text-center text-black"
+                            href="#">logo</a>
+                        <div class="d-flex py-2 mx-auto">
+                            <div class="px-2">
+                                <img src="/assets/linkedin.png" alt="linkedin">
+                            </div>
+                            <div class="px-2">
+                                <img src="/assets/twitter.png" alt="twitter">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5 class="text-center text-md-start">Designed to help accelerate business growth</h5>
+                    <p class="text-center text-md-start">&copy; 2023. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- . -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
